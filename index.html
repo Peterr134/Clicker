@@ -3,9 +3,17 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-                <h1>Chocolates Clicked:</h1>
-                <h2 id="count-el">0</h2>
-                <button onclick="increment()">Click to uncover the meaning of life!</button>
+        <div class = container>
+            <h1>Children Attending:</h1>
+            <h2 id="count-el">0</h2>
+            <button id = "increment-btn" onclick="increment()">Click to force a child to go to school!</button>
+            <button id = "save-btn" onclick="save()">Report Attendance</button>
+            <p id = saved></p>
+        </div>
+        <div class = container>
+            <h3 id = "busCounter">School Buses: </h3>
+            <button onclick="buySchoolBus()">Purchase School Bus</button>
+        </div>
     </body>
     <script src = "index.js"></script>
 </html>
