@@ -4,15 +4,20 @@
     </head>
     <body>
         <div class = container>
-            <h1>Children Attending:</h1>
+            <h1 id = "title">Children Attending:</h1>
             <h2 id="count-el">0</h2>
             <button id = "increment-btn" onclick="increment()">Click to force a child to go to school!</button>
             <button id = "save-btn" onclick="save()">Report Attendance</button>
+            <button id = "name-btn" onclick="rename()">Rename Students</button>
+            <button id = "decrement-btn" onclick="decrement()">Click to send a child home</button>
             <p id = saved></p>
         </div>
         <div class = container>
-            <h3 id = "busCounter">School Buses: </h3>
+            <h3 id = "perSecond">Current Students per Second: 0</h2>
+            <h3 id = "busCounter">School Buses (10) (+1/sec): </h3>
             <button onclick="buySchoolBus()">Purchase School Bus</button>
+            <h3 id = "strPCounter">Strict Parents (50) (*1.05/sec):</h3>
+            <button onclick="buyStrictParent()">Purchase Strict Parent</button>
         </div>
     </body>
     <script src = "index.js"></script>
